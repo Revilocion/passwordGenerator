@@ -1,3 +1,14 @@
-h1{
-    font-family: 'Open Sans Condensed', sans-serif;
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    background-color: #A852F8;
+    color: #ffffff;
+    margin-top: 200px;
+    
+}
+body{
+    background-color: #6004D5;
 }
