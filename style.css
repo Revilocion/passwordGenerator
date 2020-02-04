@@ -1,5 +1,6 @@
 
 .container{
+    
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -11,4 +12,8 @@
 }
 body{
     background-color: #6004D5;
+}
+.container2{
+    border: 80px;
+    border-style: dotted;    
 }
