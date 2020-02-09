@@ -53,36 +53,54 @@ var upperCase = [
 ];
 var special = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 
-//var passwordLengthInput = prompt("How many characters do you want your password to be?");
-//var passwordLength = 0; //Default length for password.
-
-if (passwordLengthInput !== null && passwordLengthInput !== "") {
-  passwordLength = parseInt(passwordLengthInput);
-} else {
-  //to do: tell user
-}
-
 password.addEventListener("click", function() {
-  //This didn't work...
-  lowerCase[Math.floor(Math.random() * lowerCase.length)];
-  numbers[Math.floor(Math.random() * numbers.length)];
-  upperCase[Math.floor(Math.random() * upperCase.length)];
-  special[Math.floor(Math.random() * special.length)];
+  var passwordLengthInput = prompt(
+    "How many characters do you want your password to be? Between 8 and 128 characters."
+  );
+  if (passwordLengthInput > 8 && passwordLengthInput > 128) {
+    function num(length, userinput) {
+      var password = "";
+      for(var i = 0; i < length; i++)
+      {
+        ans += arrayThatContainsALLCharactersPossible[Math.floor(Math.random() * arrayThatContainsALLCharactersPossible.length];
+      }
+      }
+    }
+  }
+  var passwordLength = passwordLengthInput;
 
-  //how am I going to be able to tie this entire function into showing the password?
+  var passwordLCharInput = confirm(
+    "Would you like to have lower case characters in your password?"
+  );
+  if (confirm) {
+  } else {
+  }
 
-  //we may need the outcome of this function to equal that of the "holder"
+  var passwordLChar = parseInt(passwordLCharInput);
+
+  var passwordNumInput = confirm(
+    "Would you like to have numbers in your password?"
+  );
+  var passwordNum = parseInt(passwordNumInput);
+
+  var passwordUCharInput = confirm(
+    "Would you like to have upper case letters in your password?"
+  );
+  var passwordUChar = parseInt(passwordUCharInput);
+
+  var passwordSpecInput = confirm(
+    "Would you like to have special characters in your password?"
+  );
+  var passwordSpec = parseInt(passwordSpecInput);
+
   var genpassword =
     lowerCase[Math.floor(Math.random() * lowerCase.length)] +
     numbers[Math.floor(Math.random() * numbers.length)] +
     upperCase[Math.floor(Math.random() * upperCase.length)] +
     special[Math.floor(Math.random() * special.length)];
+  length = parseInt(length[Math.floor(Math.random() * length.length)]);
 
   console.log(genpassword);
 
   holder.textContent = genpassword;
 });
-
-/*When the button is clicked it will run the function listed up top.
-  When the function is ran it will run into the function to actually display on screen.
-*/
